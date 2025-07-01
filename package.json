@@ -1,0 +1,42 @@
+{
+  "name": "@apitable/aitable-mcp-server",
+  "version": "1.0.0",
+  "description": "AITable.ai Model Context Protocol Server enables AI agents to connect and work with AITable datasheets.",
+  "keywords": [
+    "AITable",
+    "MCP",
+    "Model Context Protocol",
+    "AI agents",
+    "datasheets"
+  ],
+  "main": "index.js",
+  "module": "./src/index.ts",
+  "type": "module",
+  "bin": "dist/index.js",
+  "scripts": {
+    "build": "tsc && node -e \"require('fs').chmodSync('dist/index.js', '755')\"",
+    "dev": "nodemon --watch src --ext ts --exec \"npm run build\""
+  },
+  "files": [
+    "dist"
+  ],
+  "author": "AITable.ai",
+  "contributors": [
+    {
+      "name": "Kelvin Poon",
+      "email": "kelvin@aitable.ai"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1",
+    "node-fetch": "^3.3.2",
+    "zod": "^3.25.67"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "nodemon": "^3.1.9",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  }
+}
