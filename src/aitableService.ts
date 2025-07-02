@@ -21,7 +21,7 @@ export class AitableService {
     fetch: typeof nodeFetch = nodeFetch
   ) {
     if (!apiKey) {
-      throw new Error("Please set the AITABLE_API_KEY environment variable.");
+      console.log("Please set the AITABLE_API_KEY environment variable.");
     }
 
     this.apiKey = apiKey;

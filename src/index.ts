@@ -25,12 +25,8 @@ const server = new McpServer({
   instructions: "This server provides access to AITable functionalities, allowing you to interact with workspaces, nodes, and records. Use the available tools to list spaces, search nodes, list records, get fields schema, create records, and upload attachments.",
 });
 
-const apitableApiKey = process.env.AITABLE_API_KEY;
+const apitableApiKey = process.env.AITABLE_API_KEY ?? '';
 const apitableBaseUrl = process.env.AITABLE_BASE_URL ?? "https://aitable.ai/fusion";
-
-if (!apitableApiKey) {
-  throw new Error("Please set the AITABLE_API_KEY environment variable.");
-}
 
 const aitableService = new AitableService(apitableApiKey, apitableBaseUrl);
 
