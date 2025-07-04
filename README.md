@@ -2,6 +2,10 @@
 
 A Model Context Protocol server that provides read and write access to [AITable.ai](https://aitable.ai). This server enables LLMs to list spaces, search nodes, list records, create records and upload attachments in AITable.ai.
 
+<a href="https://glama.ai/mcp/servers/@apitable/aitable-mcp-server">
+  <img width="380" height="200" src="https://glama.ai/mcp/servers/@apitable/aitable-mcp-server/badge" alt="AITable Server MCP server" />
+</a>
+
 ## Tools
 
 | Tool Name                 | Availabe | Description                                                                                                   |
