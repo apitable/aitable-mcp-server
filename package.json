@@ -1,6 +1,6 @@
 {
   "name": "@apitable/aitable-mcp-server",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "AITable.ai Model Context Protocol Server enables AI agents to connect and work with AITable datasheets.",
   "keywords": [
     "AITable",
